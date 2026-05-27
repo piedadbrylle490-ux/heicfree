@@ -228,10 +228,11 @@ That one sentence is the entire marketing strategy.
 
 - [x] Replace `https://heicfree.vercel.app` in all files
 - [x] Replace `https://ko-fi.com/yourname` with your Ko-fi profile
-- [ ] Replace `https://github.com/yourname/heicfree` in footer
+- [x] Replace `https://github.com/yourname/heicfree` in footer
+- [x] Add open-source trust signals (5th trust item, MIT license mention, GitHub links)
 - [ ] Update `<meta property="og:image">` with a real screenshot
 - [ ] Submit `sitemap.xml` to Google Search Console after first deploy
-- [ ] Set up Cloudflare Web Analytics (free, no cookie banner needed)
+- [x] Set up Vercel Web Analytics (added to all pages)
 
 ---
 
