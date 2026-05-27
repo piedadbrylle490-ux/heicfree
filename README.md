@@ -65,7 +65,7 @@ heicfree/
 │   ├── ui.js           ← DOM interactions: drag-drop, queue, progress, results
 │   └── converter.js    ← Conversion engine: heic2any WASM wrapper
 │
-├── blog/               ← SEO content pages (plain HTML)
+├── blog/               
 │   ├── what-is-heic.html
 │   ├── heic-on-windows.html
 │   ├── heic-vs-jpg.html
