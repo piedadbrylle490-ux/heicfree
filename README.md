@@ -2,7 +2,7 @@
 
 **Free. Private. No upload required. Zero backend.**
 
-Live at: `https://heicfree.vercel.app` · Built by one person · [Buy Me a Coffee](https://www.buymeacoffee.com/yourname)
+Live at: `https://heicfree.vercel.app` · Built by one person · [Support me on Ko-fi](https://ko-fi.com/yourname)
 
 ---
 
@@ -209,7 +209,7 @@ The coffee button isn't just for income. It's a **trust signal**. It communicate
 - It's not a corporate ad farm
 - There's someone accountable behind it
 
-Replace `https://www.buymeacoffee.com/yourname` in `index.html` and `css/style.css` with your actual link.
+Replace `https://ko-fi.com/yourname` with your actual Ko-fi profile link.
 
 ---
 
@@ -227,7 +227,7 @@ That one sentence is the entire marketing strategy.
 ## File Replacement Checklist Before Launch
 
 - [x] Replace `https://heicfree.vercel.app` in all files
-- [ ] Replace `https://www.buymeacoffee.com/yourname` (×2 in index.html)
+- [x] Replace `https://ko-fi.com/yourname` with your Ko-fi profile
 - [ ] Replace `https://github.com/yourname/heicfree` in footer
 - [ ] Update `<meta property="og:image">` with a real screenshot
 - [ ] Submit `sitemap.xml` to Google Search Console after first deploy
