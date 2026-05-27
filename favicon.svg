@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192">
+  <!-- Background -->
+  <rect width="192" height="192" fill="#1a6b3c"/>
+  
+  <!-- Image frame -->
+  <rect x="32" y="40" width="128" height="96" rx="8" fill="none" stroke="#fafaf8" stroke-width="6"/>
+  
+  <!-- Photo circle (mountain peak) -->
+  <circle cx="68" cy="68" r="14" fill="#fafaf8"/>
+  
+  <!-- Photo horizon line -->
+  <line x1="32" y1="104" x2="160" y2="104" stroke="#fafaf8" stroke-width="5" stroke-linecap="round"/>
+  
+  <!-- Conversion arrow (right pointing) -->
+  <g transform="translate(132, 144)">
+    <line x1="0" y1="0" x2="24" y2="0" stroke="#fafaf8" stroke-width="5" stroke-linecap="round"/>
+    <polygon points="24,0 16,-6 16,6" fill="#fafaf8"/>
+  </g>
+</svg>

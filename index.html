@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HEIC to JPG — Free, Private, No Upload Required</title>
+  <meta name="description" content="Convert HEIC photos to JPG instantly in your browser. Your files never leave your device. No upload, no sign-up, no ads. 100% free." />
+  <meta name="keywords" content="heic to jpg, convert heic, heic converter free, heic no upload, iphone photos windows, heic privacy" />
+  <meta property="og:title" content="HEIC to JPG — Free, Private, No Upload" />
+  <meta property="og:description" content="Convert HEIC photos to JPG in your browser. Files never leave your device." />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://heicfree.vercel.app/" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "heicfree",
+    "applicationCategory": "MultimediaApplication",
+    "operatingSystem": "Web",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "featureList": "No upload required, Batch conversion, Privacy-first, Offline capable"
+  }
+  </script>
+</head>
+<body>
+
+  <nav>
+    <a href="/" class="logo">heic<span>free</span></a>
+    <div class="nav-links">
+      <a href="/blog/what-is-heic.html">What is HEIC?</a>
+      <a href="/blog/heic-on-windows.html">Windows Guide</a>
+      <a href="https://www.buymeacoffee.com/yourname" target="_blank" rel="noopener" class="btn-coffee">
+        ☕ Buy me a coffee
+      </a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="trust-badge">
+      <span class="dot"></span>
+      Files never leave your device — processed 100% in your browser
+    </div>
+    <h1>Convert HEIC to JPG.<br /><em>No upload. No sign-up. Free.</em></h1>
+    <p class="hero-sub">
+      Every other converter uploads your photos to an unknown server.
+      This one doesn't. Your files stay on your device — always.
+    </p>
+  </header>
+
+  <main>
+    <section class="converter-box" id="converterBox">
+
+      <!-- Drop zone -->
+      <div class="drop-zone" id="dropZone">
+        <div class="drop-icon">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="4" y="8" width="40" height="32" rx="4" stroke="currentColor" stroke-width="2" fill="none"/>
+            <path d="M16 24L24 16L32 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <line x1="24" y1="16" x2="24" y2="32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <p class="drop-primary">Drop your HEIC files here</p>
+        <p class="drop-secondary">or <label for="fileInput" class="file-label">browse to choose files</label></p>
+        <p class="drop-hint">Supports .heic and .heif · Up to 50 files at once · No size limit</p>
+        <input type="file" id="fileInput" accept=".heic,.heif,image/heic,image/heif" multiple hidden />
+      </div>
+
+      <div class="quality-row" id="qualityRow" style="display:none">
+        <label for="qualitySlider">JPG quality</label>
+        <input type="range" id="qualitySlider" min="60" max="100" value="90" step="5" />
+        <span id="qualityVal">90%</span>
+      </div>
+
+      <div class="file-queue" id="fileQueue"></div>
+
+      <div class="action-row" id="actionRow" style="display:none">
+        <button class="btn-convert" id="convertBtn">Convert to JPG</button>
+        <button class="btn-clear" id="clearBtn">Clear all</button>
+      </div>
+
+      <div class="progress-wrap" id="progressWrap" style="display:none">
+        <div class="progress-bar-bg">
+          <div class="progress-bar-fill" id="progressFill"></div>
+        </div>
+        <p class="progress-label" id="progressLabel">Converting…</p>
+      </div>
+
+      <div class="results-wrap" id="resultsWrap" style="display:none">
+        <div class="results-header">
+          <p class="results-title" id="resultsTitle">Done — 0 files converted</p>
+          <button class="btn-download-all" id="downloadAllBtn" style="display:none">⬇ Download all as ZIP</button>
+        </div>
+        <div class="results-list" id="resultsList"></div>
+        <button class="btn-convert-more" id="convertMoreBtn">Convert more files</button>
+      </div>
+
+    </section>
+
+    <section class="trust-strip">
+      <div class="trust-item">
+        <span class="trust-icon">🔒</span>
+        <strong>Zero uploads</strong>
+        <p>Conversion runs in your browser using WebAssembly. No file ever touches a server.</p>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon">⚡</span>
+        <strong>Instant results</strong>
+        <p>No waiting for server queues. Your own CPU does the work, usually under a second per photo.</p>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon">🆓</span>
+        <strong>Always free</strong>
+        <p>No sign-up, no watermarks, no limits. If it helped you, a coffee is appreciated but never required.</p>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon">📂</span>
+        <strong>Batch ready</strong>
+        <p>Drop an entire camera roll at once. Convert up to 50 photos simultaneously.</p>
+      </div>
+    </section>
+
+    <section class="how-section">
+      <h2>How does it work without uploading?</h2>
+      <p>
+        Most converters upload your photos to their servers, convert them there, then send them back.
+        That means your personal photos — holidays, documents, family moments — are stored on a stranger's machine, even briefly.
+      </p>
+      <p>
+        This tool uses <strong>WebAssembly (WASM)</strong> — a technology built into every modern browser —
+        to run the conversion code directly on your device. The conversion happens the same way a desktop app
+        would: locally, privately, and instantly. We never see your files because they never travel anywhere.
+      </p>
+      <div class="code-proof">
+        <p class="code-proof-label">// The conversion happens here, in your browser</p>
+        <code>heic2any({ blob: yourFile, toType: "image/jpeg", quality: 0.9 })</code>
+      </div>
+    </section>
+
+    <section class="faq-section">
+      <h2>Common questions</h2>
+      <details>
+        <summary>Why can't I open HEIC files on Windows?</summary>
+        <p>Apple introduced HEIC (High Efficiency Image Container) as the default photo format on iPhones in iOS 11. Windows doesn't include a HEIC decoder by default. You can either install Microsoft's free HEIF Image Extensions from the Microsoft Store, or convert the files to JPG using this tool.</p>
+      </details>
+      <details>
+        <summary>Will converting reduce photo quality?</summary>
+        <p>At 90% quality (the default), the difference is visually undetectable. You can crank it to 100% if you want lossless-equivalent output, though file sizes will be larger. HEIC photos are typically half the size of equivalent JPGs, so converted files will be larger than the originals — that's normal.</p>
+      </details>
+      <details>
+        <summary>Does this work on iPhone or Android?</summary>
+        <p>Yes. The tool runs in any modern browser. On iPhone you can share HEIC files directly from Photos, open them in Safari, and convert them. On Android, most photos are already JPG so you likely don't need this.</p>
+      </details>
+      <details>
+        <summary>Is there a file size limit?</summary>
+        <p>No server-side limit — your browser's available memory is the only ceiling. In practice, a 50-photo camera roll converts in under a minute on a modern phone or laptop.</p>
+      </details>
+      <details>
+        <summary>What about EXIF data (location, date)?</summary>
+        <p>EXIF metadata is preserved in the converted JPG. Your photo dates, camera info, and geolocation tags will remain intact.</p>
+      </details>
+    </section>
+
+    <section class="coffee-section">
+      <div class="coffee-card">
+        <p class="coffee-emoji">☕</p>
+        <h3>Built by one person, for free.</h3>
+        <p>No investors. No ad network. No data harvesting. Just a tool that does one job honestly. If it saved you time or frustration, a coffee keeps the server lights on.</p>
+        <a href="https://www.buymeacoffee.com/yourname" target="_blank" rel="noopener" class="btn-coffee-big">Buy me a coffee</a>
+        <p class="coffee-sub">Never required. Always appreciated.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <p class="footer-logo">heic<span>free</span></p>
+      <nav class="footer-nav">
+        <a href="/blog/what-is-heic">What is HEIC?</a>
+        <a href="/blog/heic-on-windows">Windows Guide</a>
+        <a href="/blog/heic-vs-jpg">HEIC vs JPG</a>
+        <a href="/blog/heic-email-wont-open">HEIC email fix</a>
+      </nav>
+      <p class="footer-copy">No cookies. No tracking. No uploads. Ever.<br/>
+      Made with intent. © 2026 heicfree</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/heic2any@0.0.4/dist/heic2any.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/converter.js"></script>
+</body>
+</html>
