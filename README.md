@@ -2,7 +2,7 @@
 
 **Free. Private. No upload required. Zero backend.**
 
-Live at: `https://heicfree.vercel.app` · Built by one person · [Support me on Ko-fi](https://ko-fi.com/yourname)
+Live at: `https://heicfree.vercel.app` · Built by one person · [Support me on Ko-fi](https://ko-fi.com/brahyan)
 
 ---
 
@@ -209,7 +209,7 @@ The coffee button isn't just for income. It's a **trust signal**. It communicate
 - It's not a corporate ad farm
 - There's someone accountable behind it
 
-Replace `https://ko-fi.com/yourname` with your actual Ko-fi profile link.
+Replace `https://ko-fi.com/brahyan` with your Ko-fi profile link if needed.
 
 ---
 
