@@ -182,48 +182,6 @@ Each blog page: ~600–800 words, one clear answer, internal link to the convert
 
 ---
 
-## Monetization Roadmap
-
-### Month 1–2 (traffic building)
-- Launch, submit to Google Search Console
-- Post genuinely in r/windows, r/iphone, r/photography when someone asks
-- Add to AlternativeTo.net listing
-- Buy Me a Coffee widget — signals human trust, earns small income
-
-### Month 3–4 (SEO compounding)
-- 8 blog posts live
-- Add HEIC → PNG as second output format
-- ProductHunt launch
-
-### Month 5–6 (monetize properly)
-- **Affiliate links**: Link to WD portable drives ("store your photos safely"), Backblaze backup ($0 to join their affiliate program)
-- **Privacy sponsor**: A VPN or privacy tool may pay $500–$2,000/mo for a tasteful mention on a privacy-focused site
-- **Optional**: $1.99 desktop Electron/Tauri app for users who want offline-forever version
-
----
-
-## "Buy Me a Coffee" — Why It's Strategic
-
-The coffee button isn't just for income. It's a **trust signal**. It communicates:
-- A real human built this
-- It's not a corporate ad farm
-- There's someone accountable behind it
-
-Replace `https://ko-fi.com/brahyan` with your Ko-fi profile link if needed.
-
----
-
-## Competitive Moat Summary
-
-You are not competing on features. You are competing on **trust and brand story**.
-
-The homepage copy says it directly:
-> *"Every other converter uploads your photos to an unknown server. This one doesn't."*
-
-That one sentence is the entire marketing strategy.
-
----
-
 ## File Replacement Checklist Before Launch
 
 - [x] Replace `https://heicfree.vercel.app` in all files
