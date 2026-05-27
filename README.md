@@ -1,8 +1,8 @@
 # heicfree — HEIC to JPG Converter
 
-**Free. Private. No upload required. Zero backend.**
+**Free. Private. No upload required. Zero backend. Fully open source.**
 
-Live at: `https://heicfree.vercel.app` · Built by one person · [Support me on Ko-fi](https://ko-fi.com/brahyan)
+Live at: `https://heicfree.vercel.app` · [GitHub: piedadbrylle490-ux/heic2any](https://github.com/piedadbrylle490-ux/heic2any)
 
 ---
 
@@ -28,26 +28,40 @@ A single-purpose web tool that converts HEIC/HEIF photos (Apple's default iPhone
 
 ---
 
-## Why It Exists — The Business Case
+## Why It Exists — A Trust Problem
 
-The HEIC converter market has a massive, exploitable trust gap:
+Millions of iPhone users face a real problem: they need to convert HEIC photos, but the existing converters ask them to **upload personal images to unknown servers**. Some have public malware complaints. Others hide fees or data harvesting behind free tiers.
 
-| Competitor | Problem |
+This shouldn't be a trust gamble.
+
+### The Trust Gap
+
+| Existing Tool | Trust Problem |
 |---|---|
-| heictojpg.com | 1.88M visits/mo — but has a public malware complaint on Trustpilot |
-| CloudConvert | Upload-based, requires sign-up, has a free tier limit |
-| FreeConvert | Upload-based, aggressive ads |
-| picflow.com | Browser-based but buried inside a larger product, no privacy brand |
+| heictojpg.com | Public Trustpilot complaint about malware ("RiskWare.SystemRequirementsLab") |
+| CloudConvert | Requires account creation; uploads files to proprietary servers |
+| FreeConvert | Free tier limits; unclear data policy; aggressive upsell |
+| picflow.com | Browser-based, but no privacy brand or accountability |
 
-This tool wins by being **the only converter that markets itself on the privacy angle** — no uploads, open source, built by one human.
+**heicfree exists to close this gap.** No uploads. No servers. No data collection. Open source so anyone can audit the code. Built by one person, not a VC-backed company with ad networks.
 
-### Target search queries
-- `heic to jpg` (high volume, broad)
-- `convert heic to jpg without uploading`
+### How This Builds Trust
+
+- **Open Source:** Full code on GitHub. Anyone can audit exactly what happens to your photos (nothing). No closed-source black boxes.
+- **No Servers:** Conversion runs in your browser using WebAssembly. Technically impossible for files to be uploaded anywhere.
+- **No Tracking:** No analytics cookies, no ad networks, no fingerprinting. Built with user privacy as the first principle.
+- **Verifiable:** Run offline after first load. Download the repo and run locally if you want complete certainty.
+- **Honest:** One person built this. No VC backing, no data extraction model. It does exactly what it says.
+
+### Who This Serves
+
+Users searching for:
+- `heic to jpg without uploading`
+- `convert heic to jpg privately`
 - `heic file won't open on windows`
 - `iphone photos not opening on windows`
 - `free heic converter no sign up`
-- `privacy-first heic converter`
+- `open source heic converter`
 
 ---
 
