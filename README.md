@@ -2,7 +2,7 @@
 
 **Free. Private. No upload required. Zero backend. Fully open source.**
 
-[Live demo](https://heic2any.vercel.app) · [Source code](https://github.com/piedadbrylle490-ux/heic2any) · [Ko-fi (optional support)](https://ko-fi.com/brahyan)
+[Live demo](https://heicfree.vercel.app) · [Source code](https://github.com/piedadbrylle490-ux/heic2any) · [Ko-fi (optional support)](https://ko-fi.com/brahyan)
 
 ---
 
